@@ -1,7 +1,12 @@
 version: '3.2'
 services:
   scouter:
-    image : scouterapm/scouter-server:2.7.0
+    build :
+      context : .
+      dockerfile: Dockerfile
+      args:
+        - SCOUTER_VERSION=${SCOUTER_VERSION}
+    image : scouterapm/scouter-server:${SCOUTER_VERSION}
     restart : always
     environment:
       - SC_SERVER_ID=SCCOUTER-COLLECTOR

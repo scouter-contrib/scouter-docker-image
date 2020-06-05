@@ -1,6 +1,7 @@
 FROM openjdk:8-jdk-alpine
 ## url setting
 LABEL maintainer="yosong.heo@gmail.com"
+ARG SCOUTER_VERSION=${SCOUTER_VERSION:-2.7.0}
 ARG INSTALL_URL=https://github.com/scouter-project/scouter/releases/download/v${SCOUTER_VERSION:-2.7.0}/scouter-all-${SCOUTER_VERSION:-2.7.0}.tar.gz
 ## install
 WORKDIR /home
