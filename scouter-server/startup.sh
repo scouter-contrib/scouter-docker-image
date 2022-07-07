@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 export SC_SERVER_ID=${SC_SERVER_ID:-SCCOUTER-COLLECTOR}
 export NET_HTTP_SERVER_ENABLED=${NET_HTTP_SERVER_ENABLED:-true}

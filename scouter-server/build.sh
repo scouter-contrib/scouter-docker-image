@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 source .env
 
 echo ">>> build server version $SCOUTER_VERSION"
